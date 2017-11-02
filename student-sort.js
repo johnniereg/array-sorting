@@ -12,7 +12,11 @@ students.sort(function(a,b) {
   if (a.name > b.name) {
     return 1;
   }
-  return 0;
+  if (a.name === b.name) {
+    if (a.age < b.age) {
+      return 1;
+    }
+  }
 });
 
 
